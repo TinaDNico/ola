@@ -15,14 +15,14 @@
             <button onclick="ejercicio4()"> ejercicio 4 </button>
             <button onclick="ejercicio5()"> ejercicio 5 </button>
             <button onclick="ejercicio6()"> ejercicio 6 </button>
-            <button> ejercicio 7 </button>
+            <button onclick="ejercicio7()"> ejercicio 7 </button>
             <button> ejercicio 8 </button>
-            <button> ejercicio 9 </button>
-            <button> ejercicio 10 </button>
-            <button> ejercicio 11 </button>
-            <button> ejercicio 12 </button>
-            <button> ejercicio 13 </button>
-            <button> ejercicio 14 </button>
+            <button onclick="ejercicio9()"> ejercicio 9 </button>
+            <button onclick="ejercicio10()"> ejercicio 10 </button>
+            <button onclick="ejercicio11()"> ejercicio 11 </button>
+            <button onclick="ejercicio12()"> ejercicio 12 </button>
+            <button onclick="ejercicio13()"> ejercicio 13 </button>
+            <button onclick="ejercicio14()"> ejercicio 14 </button>
             <button> ejercicio 15 </button>
             <button> ejercicio 16 </button>
             <button> ejercicio 17 </button>
@@ -106,7 +106,103 @@
         }
         }
         function ejercicio7(){
-
+            let dia;
+            dia =prompt("Que dia es hoy?")
+                switch(dia){
+                    case "lunes":
+                        alert("Hoy es lunes")
+                        break;
+                    case "martes":
+                        alert: ("Hoy es martes")
+                        break;
+                    case "miercoles":
+                        alert("Hoy es miercoles")
+                        break;
+                    case "jueves":
+                        alert("Hoy es jueves")
+                        break;
+                    case "viernes":
+                        alert("Hoy es viernes")
+                        break;
+                    case "sabado":
+                        alert("Hoy es sabado")
+                        break;
+                    case "domingo":
+                        alert("Hoy es domingo")
+                        break;
+                    default:
+                        alert("tonto")
+                        break;
+                }
+        }
+        function ejercicio9(){
+            let dia;
+            dia =prompt("Que dia es hoy?")
+            dia = dia.toLowerCase();
+                switch(dia){
+                    case "lunes":
+                        alert("Hoy es lunes")
+                        break;
+                    case "martes":
+                        alert: ("Hoy es martes")
+                        break;
+                    case "miercoles":
+                        alert("Hoy es miercoles")
+                        break;
+                    case "jueves":
+                        alert("Hoy es jueves")
+                        break;
+                    case "viernes":
+                        alert("Hoy es viernes")
+                        break;
+                    case "sabado":
+                        alert("Hoy es sabado")
+                        break;
+                    case "domingo":
+                        alert("Hoy es domingo")
+                        break;
+                    default:
+                        alert("tonto, eso no es un dia de la semana")
+                        break;
+                        
+                }  
+        }
+        function ejercicio10(){
+            for(let i = 1; i < 10; i++){
+                alert("hola");
+                for(i = 0; i < 10; j++){
+                alert("adios");
+                }
+            }
+        }
+        function ejercicio11() {
+            let numero = prompt("dame un numero uwu");
+            for (let i = 1; i < 11; i++) {
+            alert(numero * i);
+                }
+            }
+        function ejercicio12(){
+            let pluton = ["coco", "sandia", "fresa"];
+            for(let j = 0; j < pluton.length; j++){
+                alert(pluton[j]);
+            }
+        }
+        function ejercicio13(){
+            for(let i= 10; i>=1; i--)
+                alert(i);
+            alert("BOOOOOOOOMMM");
+            }
+        function ejercicio14(){
+            let num = 0;
+            let respuesta;
+            respuesta = prompt("dame un numero")
+            respuesta = parseInt(respuesta);
+            for(let i =1; i<= respuesta; i++){
+                if(i % 2 == 0){
+                    num += i;   
+                }
+            }
+            alert("Suma de numero par" + num)
         }
     </script>
 </body>
