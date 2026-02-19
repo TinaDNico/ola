@@ -23,9 +23,10 @@
             <button onclick="ejercicio12()"> ejercicio 12 </button>
             <button onclick="ejercicio13()"> ejercicio 13 </button>
             <button onclick="ejercicio14()"> ejercicio 14 </button>
-            <button> ejercicio 15 </button>
-            <button> ejercicio 16 </button>
-            <button> ejercicio 17 </button>
+            <button onclick="ejercicio15(8)"> ejercicio 15 </button>
+            <button onclick="ejercicio16()"> ejercicio 16 </button>
+            <button onclick="ejercicio16A()"> ejercicio 16.1 </button>
+            <button onclick="ejercicio17()"> ejercicio 17 </button>
             <button> ejercicio 18 </button>
             <button> ejercicio 19 </button>
             <button> ejercicio 20 </button>
@@ -203,6 +204,43 @@
                 }
             }
             alert("Suma de numero par" + num)
+        }
+        function ejercicio15(numeroSecreto){
+            let numeroA = 0;
+            numeroA = prompt("Adivina en el numero pienso");
+            numeroA = parseInt(numeroA);
+            while(numeroA != numeroSecreto){
+                alert("Que no, tonto")
+                numeroA = prompt("Intentalo orta vez")
+            }
+            alert("SIIII")
+        }
+        function ejercicio16(){
+            let invitados = ["Donal", "Bill", "Jay-Z","Hilary"]
+
+            invitados.forEach(element => {
+                alert("Bienvenido a la isla" + " " + element)
+                
+            });
+        }
+        function ejercicio16A(){
+            let NOinvitado = ["Elon Musk"]
+
+            NOinvitado.forEach(element => {
+                alert("Ja ja no fuiste a la isla" + " " + element)
+                
+            });
+        }
+        function ejercicio17(){
+            let ponlo = Math.floor(Math.random()*6) + 1;
+            ponlo = prompt("Dame un numero del 1 al 6")
+            ponlo = parseInt(ponlo);
+            while(ponlo != 6){
+                alert("nonono")
+                ponlo=Math.floor(Math.random()*6) + 1;
+                ponlo= prompt("Otra vez, que estaba mal");
+            }
+            alert("ya era hora");
         }
     </script>
 </body>
