@@ -7,36 +7,36 @@
 </head>
 <body>
     <header>
-        <h1>Niggers</h1>
+        <h1 style="color: crimson;">Niggers</h1>
         <nav>
-            <button onclick="ejercicio1()"> ejercicio 1 </button>
-            <button onclick="ejercicio2()"> ejercicio 2 </button>
-            <button onclick="ejercicio3('gay el que lo lea')"> ejercicio 3 </button>
-            <button onclick="ejercicio4()"> ejercicio 4 </button>
-            <button onclick="ejercicio5()"> ejercicio 5 </button>
-            <button onclick="ejercicio6()"> ejercicio 6 </button>
-            <button onclick="ejercicio7()"> ejercicio 7 </button>
-            <button> ejercicio 8 </button>
-            <button onclick="ejercicio9()"> ejercicio 9 </button>
-            <button onclick="ejercicio10()"> ejercicio 10 </button>
-            <button onclick="ejercicio11()"> ejercicio 11 </button>
-            <button onclick="ejercicio12()"> ejercicio 12 </button>
-            <button onclick="ejercicio13()"> ejercicio 13 </button>
-            <button onclick="ejercicio14()"> ejercicio 14 </button>
-            <button onclick="ejercicio15(8)"> ejercicio 15 </button>
-            <button onclick="ejercicio16()"> ejercicio 16 </button>
-            <button onclick="ejercicio16A()"> ejercicio 16.1 </button>
-            <button onclick="ejercicio17()"> ejercicio 17 </button>
-            <button> ejercicio 18 </button>
-            <button> ejercicio 19 </button>
-            <button> ejercicio 20 </button>
-            <button> ejercicio 21 </button>
-            <button> ejercicio 22 </button>
-            <button> ejercicio 23 </button>
+            <button onclick="ejercicio1()" style="background-color: hotpink; color: bisque;"> Ejercicio 1 </button>
+            <button onclick="ejercicio2()" style="background-color: hotpink; color: bisque;"> Ejercicio 2 </button>
+            <button onclick="ejercicio3('gay el que lo lea')" style="background-color: hotpink; color: bisque;"> Ejercicio 3 </button>
+            <button onclick="ejercicio4()" style="background-color: hotpink; color: bisque;"> Ejercicio 4 </button>
+            <button onclick="ejercicio5()" style="background-color: hotpink; color: bisque;"> Ejercicio 5 </button>
+            <button onclick="ejercicio6()" style="background-color: hotpink; color: bisque;"> Ejercicio 6 </button>
+            <button onclick="ejercicio7()" style="background-color: hotpink; color: bisque;"> Ejercicio 7 </button>
+            <button onclick="ejercicio8()" style="background-color: hotpink; color: bisque;"> Ejercicio 8 </button>
+            <button onclick="ejercicio9()" style="background-color: hotpink; color: bisque;"> Ejercicio 9 </button>
+            <button onclick="ejercicio10()" style="background-color: hotpink; color: bisque;"> Ejercicio 10 </button>
+            <button onclick="ejercicio11()" style="background-color: hotpink; color: bisque;"> Ejercicio 11 </button>
+            <button onclick="ejercicio12()" style="background-color: hotpink; color: bisque;"> Ejercicio 12 </button>
+            <button onclick="ejercicio13()" style="background-color: hotpink; color: bisque;"> Ejercicio 13 </button>
+            <button onclick="ejercicio14()" style="background-color: hotpink; color: bisque;"> Ejercicio 14 </button>
+            <button onclick="ejercicio15(8)" style="background-color: hotpink; color: bisque;"> Ejercicio 15 </button>
+            <button onclick="ejercicio16()" style="background-color: hotpink; color: bisque;"> Ejercicio 16 </button>
+            <button onclick="ejercicio16A()" style="background-color: hotpink; color: bisque;"> Ejercicio 16.1 </button>
+            <button onclick="ejercicio17()" style="background-color: hotpink; color: bisque;"> Ejercicio 17 </button>
+            <button onclick="ejercicio18()" style="background-color: hotpink; color: bisque;"> Ejercicio 18 </button>
+            <button onclick="ejercicio19()" style="background-color: hotpink; color: bisque;"> Ejercicio 19 </button>
+            <button onclick="ejercicio20()" style="background-color: hotpink; color: bisque;"> Ejercicio 20 </button>
+            <button onclick="ejercicio21()" style="background-color: hotpink; color: bisque;"> Ejercicio 21 </button>
+            <button onclick="ejercicio22('Gordisimo')" style="background-color: hotpink; color: bisque;"> ¿Como sera Pluton? </button>
 
         </nav>
     </header>
     <main>
+        <p id="texto"> Pues Pluton es...</p>
         <div>
             <img src="https://i.pinimg.com/736x/f6/ba/6b/f6ba6b06cac15c04f8261a169cd84bcd.jpg">
         </div>
@@ -135,6 +135,9 @@
                         alert("tonto")
                         break;
                 }
+        }
+        function ejercicio8(){
+            alert("Pluton gay")
         }
         function ejercicio9(){
             let dia;
@@ -241,6 +244,34 @@
                 ponlo= prompt("Otra vez, que estaba mal");
             }
             alert("ya era hora");
+        }
+        function ejercicio18(){
+            let invitados = ["Donal", "Bill", "Jay-Z","Hilary"]
+            invitados.forEach(element => {
+                alert("Esta en la lista")
+            });
+        }
+        function ejercicio19(){
+            let letras = ["a", "b", "c", "d", "e"] 
+            letras.reverse();
+            alert(letras)
+        }
+        function ejercicio20(){
+          let compra = ["Zumo de Naranja", " Galletas uwu", " Chocolate ", " Bollito"];
+          compra.sort();
+          alert(compra);  
+        }
+        function ejercicio21(){
+            let precios =[7.99, 8, 1.25, 6.50]
+            let preciosConIVA=[]
+            precios.forEach((precio)=> {
+                let total = precio * 1.21;
+                preciosConIVA.push(total)
+            });
+            alert("Precio Final:  "+ preciosConIVA)
+        }
+        function ejercicio22(pluton){
+            document.getElementById("texto").textContent = "Pues Pluton es Gordo";
         }
     </script>
 </body>
